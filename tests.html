@@ -14,7 +14,14 @@
     <script class="mocha-exec">
         mocha.setup('bdd');
         var expect = chai.expect;
-        mocha.run();
+        mocha.run(function(failures) {
+            if ( window.location.href.indexOf('badge')>0 ) {
+                if (failures>0)
+                    window.location.replace("https://img.shields.io/badge/tests%20failed-red");
+                else
+                    window.location.replace("https://img.shields.io/badge/tests%20passed-green");
+            }
+        } );
     </script>
     <script src="tests.js"></script>
     <div id="test data" style="display: none;">
