@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Unit tests</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <script src="RedLinks.js"></script>
+    <script src="WdItem.js"></script>
+    <script src="WDQS.js"></script>
+    <script class="mocha-exec">
+        mocha.setup('bdd');
+        var expect = chai.expect;
+        mocha.run();
+    </script>
+    <script src="tests.js"></script>
+    <div id="test data" style="display: none;">
+        <div id="test 1 нп5" class="mw-parser-output">
+        <ul>
+            <li><span data-interwiki-lang="en" data-interwiki-article="Saturn (Rubens)"><a id='link1' href="https://ru.wikipedia.org/w/index.php?title=%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD,_%D0%BF%D0%BE%D0%B6%D0%B8%D1%80%D0%B0%D1%8E%D1%89%D0%B8%D0%B9_%D1%81%D0%B2%D0%BE%D0%B5%D0%B3%D0%BE_%D1%81%D1%8B%D0%BD%D0%B0_(%D0%A0%D1%83%D0%B1%D0%B5%D0%BD%D1%81)&amp;action=edit&amp;redlink=1" class="new" title="Сатурн, пожирающий своего сына (Рубенс) (страница отсутствует)">Сатурн</a></span><span style="font-style:normal; font-weight:normal;"><sup class="noprint"><a href="https://en.wikipedia.org/wiki/Saturn_(Rubens)" class="extiw" title="en:Saturn (Rubens)"><span title="Saturn (Rubens) — версия статьи «Сатурн, пожирающий своего сына (Рубенс)» на английском языке">[en]</span></a></sup></span>&nbsp;— картина фламандского живописца <a href="/wiki/%D0%A0%D1%83%D0%B1%D0%B5%D0%BD%D1%81,_%D0%9F%D0%B8%D1%82%D0%B5%D1%80_%D0%9F%D0%B0%D1%83%D0%BB%D1%8C" title="Рубенс, Питер Пауль">Питера Рубенса</a></li>
+        </ul>
+    </div>
+        <div id="test 1 plain link and 1 не переведено" class="mw-parser-output">
+    <ul><li><a href="/wiki/%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD_(%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BE%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%BD%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%8B)" title="Сатурн (система противоракетной обороны)">ПРО «Сатурн»</a>&nbsp;— советский проект передвижной системы противоракетной обороны для защиты стратегически важных объектов страны и прикрытия войск от баллистических ракет средней дальности, разрабатывавшийся в 1958—1961&nbsp;гг.</li>
+    <li><a href="https://ru.wikipedia.org/w/index.php?title=%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD_(%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81)&amp;action=edit&amp;redlink=1&amp;editintro=T:Нет_статьи/editintro" class="new" title="Сатурн (ракетный комплекс) (страница отсутствует)">ОТРК «Сатурн»</a>&nbsp;— советский проект оперативно-тактического ракетного комплекса, разрабатывавшийся в 1969—1971&nbsp;гг.</li>
+    <li><span data-interwiki-lang="en" data-interwiki-article="RFA Stromness (A344)"><a id="link2" href="https://ru.wikipedia.org/w/index.php?title=RFA_Stromness_(A344)&amp;action=edit&amp;redlink=1" class="new" title="RFA Stromness (A344) (страница отсутствует)">Saturn</a></span><span class="noprint" style="white-space: nowrap; font-size: 85%;"> (<a href="https://en.wikipedia.org/wiki/RFA_Stromness_(A344)" class="extiw" title="en:RFA Stromness (A344)"><span title="RFA Stromness (A344) — версия статьи «RFA Stromness (A344)» на английском языке">англ.</span></a>)</span>&nbsp;— название британского военного судна RFA Stromness после продажи ВМФ США в 1983&nbsp;г.</li>
+    <li><span data-interwiki-lang="d" data-interwiki-article="Q12063857"><a id="link3" href="/w/index.php?title=%D0%9D%D1%8C%D1%8E-%D0%9C%D0%B0%D0%BD%D1%87%D0%B5%D1%81%D1%82%D0%B5%D1%80&amp;action=edit&amp;redlink=1" class="new" title="Нью-Манчестер (страница отсутствует)">Нью-Манчестер</a></span><span class="noprint" style="white-space:nowrap;font-size:85%"> (<a href="https://www.wikidata.org/wiki/Q12063857#sitelinks-wikipedia" class="extiw" title="d:Q12063857"><span title="Элемент статьи «Нью-Манчестер» в Викиданных">d</span></a>)</span>
+    </li>       
+            </ul>
+        </div>
+    <div id="paragraph" class="mw-parser-output">Фредерик Калверт с 1847 года владел своей долей семейного состояния. В период наибольшего расцвета его поместье (впоследствии получившее имя «Тимбра», в честь <span data-interwiki-lang="tr" data-interwiki-article="Hanay Tepe Höyüğü"><a id="link4" href="/w/index.php?title=%D0%A4%D0%B8%D0%BC%D0%B1%D1%80%D0%B0&amp;action=edit&amp;redlink=1" class="new" title="Фимбра (страница отсутствует)">античного города</a></span><span style="font-style:normal; font-weight:normal;"><sup class="noprint"><a href="https://tr.wikipedia.org/wiki/Hanay_Tepe_H%C3%B6y%C3%BC%C4%9F%C3%BC" class="extiw" title="tr:Hanay Tepe Höyüğü"><span title="Hanay Tepe Höyüğü — версия статьи «Фимбра» на английском языке">[en]</span></a></sup></span>) на Троянском плато занимало около 3000 <a href="/wiki/%D0%90%D0%BA%D1%80" title="Акр">акров</a>, а земли простирались на 4 мили к юго-востоку от <a href="/wiki/%D0%93%D0%B8%D1%81%D1%81%D0%B0%D1%80%D0%BB%D1%8B%D0%BA" title="Гиссарлык">Гиссарлыка</a> вплоть до слияния рек Кемер и <a href="/wiki/%D0%9A%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B5%D1%81" title="Карамендерес">Мендерес</a>, но, преимущественно, были болотистыми. В основном земли были засажены <a href="/wiki/%D0%94%D1%83%D0%B1" title="Дуб">дубовым</a> лесом (<span data-interwiki-lang="en" data-interwiki-article="Quercus macrolepis"><a id="link5" href="/w/index.php?title=Quercus_macrolepis&amp;action=edit&amp;redlink=1" class="new" title="Quercus macrolepis (страница отсутствует)">Quercus macrolepis</a></span><span style="font-style:normal; font-weight:normal;"><sup class="noprint"><a href="https://en.wikipedia.org/wiki/Quercus_macrolepis" class="extiw" title="en:Quercus macrolepis"><span title="Quercus macrolepis — версия статьи «Quercus macrolepis» на английском языке">[en]</span></a></sup></span>), <a href="/wiki/%D0%96%D1%91%D0%BB%D1%83%D0%B4%D0%B8" class="mw-redirect" title="Жёлуди">жёлуди</a> и кора поставлялись для кожевенной и красильной промышленности Англии. По мере осушения болот Калверты стали выращивать <a href="/wiki/%D0%A5%D0%BB%D0%BE%D0%BF%D0%BE%D0%BA" title="Хлопок">хлопок</a> и <a href="/wiki/%D0%9F%D1%88%D0%B5%D0%BD%D0%B8%D1%86%D0%B0" title="Пшеница">пшеницу</a>, а также создали 240 акров пастбищ<sup id="cite_ref-_ec51644f3677b9d5_10-0" class="reference"><a href="#cite_note-_ec51644f3677b9d5-10">[10]</a></sup>. Из-за <a href="/wiki/%D0%A0%D0%B5%D0%B6%D0%B8%D0%BC_%D0%BA%D0%B0%D0%BF%D0%B8%D1%82%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D0%B9" title="Режим капитуляций">режима капитуляций</a> юрисдикция турецких судов не распространялась на европейских подданных, поэтому консул в османских владениях был наделён судебной властью «хранителя чести своей страны и защитника прав её граждан»<sup id="cite_ref-_98928a582ef7ab6c_11-0" class="reference"><a href="#cite_note-_98928a582ef7ab6c-11">[11]</a></sup>.
+    </div>    
+</div>
+</body>
+</html>
