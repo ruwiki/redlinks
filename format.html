@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Build gadget text</title>
+</head>
+<body>
+    <pre id="src"/>
+    <script>
+        Promise.all([
+            fetch('gadget.js').then(function(response) { return response.text() }),
+            fetch('WDQS.js').then(function(response) { return response.text() }),
+            fetch('WdItem.js').then(function(response) { return response.text() }),
+            fetch('RedLinks.js').then(function(response) { return response.text() }),
+         ]).then(function(files) {
+            var include = '';
+            for (var i=1; i<files.length; i++) {
+                if (include.length > 0) include += '\n';
+                var lines = files[i].split('\n');
+                for (var j=0; j<lines.length; j++)
+                    include += '\t' + lines[j] + '\n';
+            }
+            document.querySelector('#src').innerText = files[0].replace('    // Included files\n', include);
+         });
+    </script>
+</body>
+</html>
