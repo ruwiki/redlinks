@@ -1,4 +1,5 @@
 (function(mw, $) {
+    // Included files
     var wdqs = new WDQS(localStorage, fetch),
     	$textbox,
     	item;
