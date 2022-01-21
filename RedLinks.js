@@ -15,6 +15,9 @@ RedLinks.prototype.parseRedLinks = function(doc) {
             host += '.wikipedia.org';
         }
         var title = redLinks[i].getAttribute('data-interwiki-article');
+        if ( redLinks[i].children[0].className !== 'new' ) {
+            continue;
+        }
         if (!this.links[host]) this.links[host] = {};
         if (!this.links[host][title]) this.links[host][title] = [];
         this.links[host][title].push(redLinks[i].children[0]);
